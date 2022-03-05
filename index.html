@@ -11,7 +11,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
@@ -29,14 +29,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="sos-text nav-link" href="#">SOS</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
@@ -62,27 +54,21 @@
 
     <!-- Main Container -->
     <div class="container-fluid main-container">
-      <div class="glass-panel" id="sos-btn">SOS</div>
-      <!-- BUTTONS -->
-      <div class="container main-container-buttons">
-        <button type="button" class="btn btn-success">GPS Location</button>
-
-        <button type="button" style="margin-top: 10px" class="btn btn-warning">
-          Compass
-        </button>
-      </div>
-      <!-- BUTTONS -->
+      <button class="glass-panel" id="sos-btn">SOS</button>
     </div>
+    <!-- BUTTONS -->
+    <div class="container main-container-buttons">
+      <button type="button" class="btn btn-success">Dummy</button>
+
+      <button type="button" class="btn btn-warning">Settings</button>
+    </div>
+    <!-- BUTTONS -->
 
     <!-- Container Boxes  -->
     <div class="container-boxes">
       <div class="box">
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="https://cdn.pixabay.com/photo/2021/08/02/22/41/background-6517956_1280.jpg"
-            alt="Card image cap"
-          />
+        <div class="card" style="width: 10rem">
+          <img class="card-img-top" src="img/chat.gif" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text">Messaging</p>
           </div>
@@ -90,10 +76,10 @@
       </div>
 
       <div class="box">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 10rem">
           <img
             class="card-img-top"
-            src="https://cdn.pixabay.com/photo/2021/08/02/22/41/background-6517956_1280.jpg"
+            src="img/tracking.gif"
             alt="Card image cap"
           />
           <div class="card-body">
@@ -102,25 +88,25 @@
         </div>
       </div>
     </div>
-    <div class="container-boxes">
+    <div class="container-boxes" style="margin-bottom: 10vh">
       <div class="box">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 10rem">
           <img
             class="card-img-top"
-            src="https://cdn.pixabay.com/photo/2021/08/02/22/41/background-6517956_1280.jpg"
+            src="img/supplies.gif"
             alt="Card image cap"
           />
           <div class="card-body">
-            <p class="card-text">Food Medicine</p>
+            <p class="card-text">Supplies</p>
           </div>
         </div>
       </div>
 
       <div class="box">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 10rem">
           <img
             class="card-img-top"
-            src="https://cdn.pixabay.com/photo/2021/08/02/22/41/background-6517956_1280.jpg"
+            src="img/contacts.gif"
             alt="Card image cap"
           />
           <div class="card-body">
