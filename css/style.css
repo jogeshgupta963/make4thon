@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Secular+One&display=swap");
+
+/* Main Container */
+.main-container {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(img/camo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Secular One", sans-serif;
+}
+
+/* Container Buttons */
+.main-container-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex: 1 1;
+}
+
+.main-container-buttons button {
+  font-size: 1.2em;
+  padding: 0.2em 0.3em;
+  width: 200px;
+  margin: 15px;
+}
+
+/* Main Button */
+.main-btn {
+  font-size: 5em;
+  padding: 1em 1.5em;
+}
+
+/* CSS */
+.glass-panel {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  background-color: white;
+  opacity: 0.5;
+  height: 15vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.glass-panel:disabled {
+  pointer-events: none;
+}
+
+.glass-panel:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.glass-panel:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Container Boxes */
+.container-boxes {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1;
+}
+
+.container-boxes .box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 1em 0;
+  text-align: center;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background-color: #000;
+}
