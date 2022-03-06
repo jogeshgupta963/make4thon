@@ -15,11 +15,11 @@ app.post('/sms', (req, res) => {
     console.log(req.body);
     const twiml = new MessagingResponse();
     // twiml.message(req.body.text);
-    twiml.message("hello world");
+    twiml.message(req.body.text);
 
-    // res.writeHead(200, { 'Content-Type': 'text/xml' });
     res.writeHead(200, { 'Content-Type': 'text/xml' });
-    res.json(twiml.toString());
+    // res.writeHead(200, { 'Content-Type': 'text/xml' });
+    res.end(twiml.toString());
 
     // res.json(twiml.toString())
 });
