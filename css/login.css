@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Secular+One&display=swap");
 section {
   background-color: #508bfc;
   background-image: url("../img/flag_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 23.5vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-2 {
+  color: #138808;
+  font-weight: 400;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Secular One", sans-serif;
 }
