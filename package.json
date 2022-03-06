@@ -4,5 +4,24 @@
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "twilio": "^3.75.0"
-  }
+  },
+  "name": "make4thon",
+  "description": "<p> Name is particularly aimed at solving some of the major issues an army person faces in a base camp. The major solutions we are trying to add in this project are :\r 1.Providing a system capable of allowing users to communicate using a Bluetooth based mesh network at a time of no cellular network availability. <br>\r 2.Required person can update information like food, medical facility, etc. and accordingly forward the requests to authorities. <br>\r 3. Interface for the control room to monitor the soldier’s last position and movement when under network. <p\\> <br>",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jogeshgupta963/make4thon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jogeshgupta963/make4thon/issues"
+  },
+  "homepage": "https://github.com/jogeshgupta963/make4thon#readme"
 }
