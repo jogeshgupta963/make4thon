@@ -2,12 +2,14 @@
 
 /* Main Container */
 .main-container {
+  /* display: none; */
   height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(img/camo.jpg);
+  /* background: url(img/camo.jpg); */
+  background: url(img/images.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
