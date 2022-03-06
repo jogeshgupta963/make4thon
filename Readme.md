@@ -1,4 +1,4 @@
-# Sahay
+# Sahaya
 
 ## Project  Description :
 <p> Name is particularly aimed at solving some of the major issues an army person faces in a base camp. The major solutions we are trying to add in this project are :
