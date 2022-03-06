@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav
+    class="navbar navbar-expand-lg navbar-light bg-light main-nav"
+    style="border-bottom: 1px solid gray"
+  >
+    <a class="navbar-brand" href="#">SAHAYA</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messaging</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/maps">Live Sharing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/supplies">Supplies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav  -->
+    <div class="app" ng-app="chatSystem" ng-controller="MainCtrl">
+        <div class="topbar">
+          <strong>Anna</strong>
+        </div>
+        <div class="chat" id="chat">
+      
+          <div class="person">
+            Hey</div>
+          <div class="person">
+            Type whatever you want below.</div>
+          <div class="person">
+            Press enter or click the blue circle to send</div>
+          <div class="person">
+            I can't reply yet... Maybe one day.</div>
+      
+          <!--<div class="me">
+            yeah u gotta' file once every 2 weeks at least</div>
+          <div class="me">
+            and u gotta' groom eyebrows once every 10 days at least</div>
+          <div class="me">
+            most*??
+          </div>
+      
+          <div class="person">
+            you females have it tough im sorry</div>
+          <div class="person">
+            So much to maintain</div>-->
+      
+          <div ng-repeat="post in msgs">
+            <div class="me">
+              {{post.text}}
+            </div>
+            <!--<div class="person">
+              {{reply}}
+            </div>-->
+          </div>
+      
+      
+        </div>
+      
+        <form name="submitTxt" class="message" ng-submit="addNew()">
+          <textarea ng-model="messg" ng-keyup="$event.keyCode == 13 && addNew()"></textarea>
+          <input type="submit" value="" class="send"></input>
+        </form>
+      </div>
+      <script>
+          angular.module('chatSystem', []).controller('MainCtrl', ['$scope', function($scope) {
+
+$scope.msgs = [{
+  text: 'Hello friend'
+}];
+
+$scope.replies = ['hi there', 'friends', 'friendship is a beautiful thing', 'i am so sleepy', 'why is this happening honestly'];
+
+$scope.reply = '';
+
+$scope.randReply = function() {
+  $scope.reply = $scope.replies[Math.floor(Math.random() * 3)];
+  return;
+};
+
+$scope.addNew = function() {
+  if (!$scope.messg || $scope.messg === '') {
+    return;
+  }
+  $scope.msgs.push({
+    text: $scope.messg
+  });
+  $scope.messg = '';
+  $scope.reply = $scope.replies[Math.floor(Math.random() * 3)];
+  $("#chat").animate({
+    scrollTop: $("#chat")[0].scrollHeight
+  }, 1000);
+}
+
+}])
+      </script>
+</body>
+</html>

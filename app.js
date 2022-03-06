@@ -39,6 +39,9 @@ app.get('/contact', (req, res) => {
 app.get('/supplies', (req, res) => {
     res.sendFile(path.join(__dirname, '/contact.html'))
 })
+app.get('/chat', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chat.html'))
+})
 
 
 app.listen(1337, () => {
