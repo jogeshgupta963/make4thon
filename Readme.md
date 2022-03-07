@@ -1,5 +1,5 @@
 # Sahaya 
-(track prize winner in makeathon4 sponsored by mlh) 
+(track prize winner in makeathon4 sponsored by mlh and organised by mlsc tiet) 
 
 ## Project  Description :
 <p> Name is particularly aimed at solving some of the major issues an army person faces in a base camp. The major solutions we are trying to add in this project are :<br>
