@@ -37,7 +37,7 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, '/contact.html'))
 })
 app.get('/supplies', (req, res) => {
-    res.sendFile(path.join(__dirname, '/contact.html'))
+    res.sendFile(path.join(__dirname, '/supplies.html'))
 })
 app.get('/chat', (req, res) => {
     res.sendFile(path.join(__dirname, '/chat.html'))
